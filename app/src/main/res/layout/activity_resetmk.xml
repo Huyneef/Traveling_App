@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ResetPassActivity">
+
+    <TextView
+        android:id="@+id/resetemail_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đặt lại mật khẩu"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:textSize="25dp"
+        android:textColor="#0099ff"
+        />
+    <TextView
+        android:id="@+id/resetmk_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng nhập mật khẩu mới của bạn"
+        android:textSize="14dp"
+        android:textColor="#817A7A"
+        android:layout_below="@+id/resetemail_tv1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        />
+    <EditText
+        android:id="@+id/resetmk_mkmoi"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bgr_editext_dangnhap"
+        android:layout_below="@id/resetmk_tv2"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Mật khẩu mới"
+        android:textSize="14dp"
+        android:textColorHint="#817A7A"
+        android:drawableLeft="@drawable/baseline_lock_24"
+
+        android:drawablePadding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"/>
+    <EditText
+        android:id="@+id/dangky_xnmatkhau"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bgr_editext_dangnhap"
+        android:layout_below="@id/resetmk_mkmoi"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Xác nhận mật khẩu"
+        android:textSize="14dp"
+        android:textColorHint="#817A7A"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"/>
+    <Button
+        android:id="@+id/resetmk_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dangky_xnmatkhau"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/stroke_button1"
+        android:text="Đặt lại mật khẩu"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        >
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>

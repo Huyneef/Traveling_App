@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ForgotPassActivity">
+
+    <TextView
+        android:id="@+id/quenmk_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:textSize="25dp"
+        android:textColor="#0099ff"
+        />
+    <TextView
+        android:id="@+id/quenmk_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập địa chỉ email của bạn và chúng tôi sẽ gửi cho bạn mã đặt lại mật khẩu."
+        android:textSize="14dp"
+        android:textColor="#817A7A"
+        android:layout_below="@+id/quenmk_tv1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+     />
+    <EditText
+        android:id="@+id/quenmk_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bgr_editext_dangnhap"
+        android:layout_below="@id/quenmk_tv2"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Nhập địa chỉ email của bạn."
+        android:textSize="14dp"
+        android:textColorHint="#817A7A"
+        android:drawableLeft="@drawable/baseline_mail_24"
+        android:drawablePadding="10dp"
+        android:paddingLeft="15dp"/>
+    <Button
+        android:id="@+id/quenmk_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quenmk_email"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/stroke_button1"
+        android:text="Gửi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

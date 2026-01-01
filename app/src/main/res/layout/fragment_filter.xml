@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filterFragmentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    tools:context=".fragment.FilterFragment">
+
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            style="@style/SmallClickableTextView"
+            android:drawableStart="@drawable/baseline_location_on_24"
+            android:layout_marginStart="15dp"
+            android:id="@+id/getCurrentLocationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_current_location"/>
+    </FrameLayout>
+</LinearLayout>

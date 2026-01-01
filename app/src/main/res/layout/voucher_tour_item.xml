@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView                        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="6dp">
+        <ImageView
+            android:id="@+id/img_voucher"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/main_voucher1"></ImageView>
+
+        <Button
+            android:padding="0dp"
+            android:textSize="11sp"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            app:backgroundTint="#016397"
+            android:background="#016397"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom|right"
+            android:text="Lưu" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

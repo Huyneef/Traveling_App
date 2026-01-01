@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/border_tour_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:id="@+id/avatar_tour_admin"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            tools:src="@drawable/main_anh1"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <TextView
+                android:id="@+id/title_tour_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Tour 1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/address_tour_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Địa chỉ: Quảng Ninh"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/time_tour_admin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Thời gian: 20/11/2023 - 22/11/2023"
+                android:textSize="16sp"></TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/menu_tour_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-20dp"
+            android:src="@drawable/admin_menu_icon"/>
+
+    </LinearLayout>
+
+</LinearLayout>

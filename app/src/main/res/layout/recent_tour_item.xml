@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_card"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="5dp"
+        android:layout_margin="6dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/recent_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            tools:src="@drawable/main_anh1">
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|right">
+
+            <View android:id="@+id/rectangle_7"
+                android:background="@drawable/main_rectangle"
+                android:layout_marginStart="100dp"
+                android:layout_width="170dp"
+                android:layout_height="100dp" />
+
+            <ImageView
+                android:id="@+id/polygon_1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/polygon_1" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="bottom|right">
+
+            <TextView
+                android:id="@+id/recent_title"
+                android:textSize="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tour Sapa 2 ngày 1 đêm"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/recent_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="123 Nguyễn Ngọc Hà"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="35dp"
+                android:textSize="11dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_user_solid"></ImageView>
+
+                <TextView
+                    android:id="@+id/recent_book"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22k đã đặt"
+                    android:textColor="@color/primaryColor"></TextView>
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_star_solid"></ImageView>
+
+                <TextView
+                    android:id="@+id/recent_rate"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textColor="@color/primaryColor"></TextView>
+
+                <TextView
+                    android:id="@+id/recent_comment"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(123 đánh giá)"
+                    android:textColor="#A9A9A9"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recent_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3.000.000đ"
+                    android:textColor="@color/black">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="-10dp"
+                    android:background="@color/black"></LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recent_sale_price"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:backgroundTint="#1671AC"
+            android:background="@drawable/button_border_main"
+            android:text="950.000đ"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="105dp"
+            android:textStyle="bold"></TextView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

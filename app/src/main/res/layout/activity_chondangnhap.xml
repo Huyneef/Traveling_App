@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WelcomeActivity">
+
+    <TextView
+        android:id="@+id/at2_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="TRAVELING"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/at2_img"
+        android:layout_below="@+id/at2_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo5"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/at2_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/at2_img"
+        android:text="Chào mừng bạn trở lại!"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/at2_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/at2_tv2"
+        android:layout_marginTop="2dp"
+        android:text="Truy cập ưu đãi riêng cho thành viên, thông báo giá và nhiều hơn nữa."
+        android:textSize="14dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingEnd="40dp"
+        android:textColor="@color/black"/>
+    <Button
+        android:id="@+id/chondangnhap_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/at2_tv3"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/stroke_button1"
+        android:text="Đăng nhập"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/chondangnhap_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chondangnhap_btn1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/stroke_button"
+        android:text="Đăng ký"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoặc đăng nhập bằng"
+        android:gravity="center"
+        android:layout_above="@+id/socialicons"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/socialicons"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/icon_fb"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_margin="3dp"
+            android:src="@drawable/ic_fb"/>
+        <ImageView
+            android:id="@+id/icon_gg"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_margin="3dp"
+            android:src="@drawable/ic_gg"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_margin="3dp"
+            android:src="@drawable/ic_ig" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

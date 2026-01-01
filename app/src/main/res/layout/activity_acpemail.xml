@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AcpemailActivity">
+
+    <TextView
+        android:id="@+id/acpemail_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác thực Email"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:textSize="25dp"
+        android:textColor="#0099ff"
+        />
+    <TextView
+        android:id="@+id/quenmk_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng nhập mã OTP được cung cấp."
+        android:textSize="14dp"
+        android:textColor="#817A7A"
+        android:layout_below="@+id/acpemail_tv1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        />
+     <LinearLayout
+         android:id="@+id/acpemail_linear"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:layout_below="@id/quenmk_tv2"
+         android:layout_marginTop="70dp">
+
+         <EditText
+             android:id="@+id/xt1"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_margin="7dp"
+             android:background="@drawable/stroke_acpemail"
+             android:gravity="center"
+             android:hint="0" />
+
+         <EditText
+             android:id="@+id/xt2"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_margin="7dp"
+             android:background="@drawable/stroke_acpemail"
+             android:gravity="center"
+             android:hint="0" />
+
+         <EditText
+             android:id="@+id/xt3"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_margin="7dp"
+             android:background="@drawable/stroke_acpemail"
+             android:gravity="center"
+             android:hint="0" />
+
+         <EditText
+             android:id="@+id/xt4"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_margin="7dp"
+             android:background="@drawable/stroke_acpemail"
+             android:gravity="center"
+             android:hint="0" />
+
+     </LinearLayout>
+
+    <Button
+        android:id="@+id/acpemail_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/acpemail_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/stroke_button1"
+        android:text="Xác minh"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        >
+    </androidx.appcompat.widget.Toolbar>
+
+
+</RelativeLayout>

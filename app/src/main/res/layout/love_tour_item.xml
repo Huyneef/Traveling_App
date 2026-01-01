@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_love_tour"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            tools:src="@drawable/main_anh2"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/title_love_tour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Vịnh Hạ Long"
+                android:layout_marginRight="30dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/heartImageView"
+                android:src="@drawable/heart_solid_active"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="-30dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/address_love_tour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            tools:text="Địa chỉ: Đà Nẵng"/>
+
+        <LinearLayout
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_user_solid"></ImageView>
+
+            <TextView
+                android:id="@+id/book_love_tour"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="22k đã đặt"
+                android:textColor="@color/primaryColor"/>
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/main_star_solid"></ImageView>
+
+            <TextView
+                android:id="@+id/rate_love_tour"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="4"
+                android:textColor="@color/primaryColor"></TextView>
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/comment_love_tour"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="(123 đánh giá)"
+                android:textColor="#A9A9A9"></TextView>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

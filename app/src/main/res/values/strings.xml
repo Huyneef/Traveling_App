@@ -1,0 +1,89 @@
+<resources>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="forgotten_password">Quên mật khẩu</string>
+    <string name="reset_password">Đặt lại mật khẩu</string>
+    <string name="successful">Thành công</string>
+    <string name="failed">Thất bại</string>
+    <string name="administrator">Quản trị viên</string>
+    <string name="get_started">Bắt đầu</string>
+    <string name="comment">Bình luận</string>
+    <string name="blog">Blog</string>
+    <string name="create_blog">Tạo blog</string>
+    <string name="detail">Chi tiết</string>
+    <string name="tour_history">Lịch sử tour</string>
+    <string name="coupon">Mã giảm giá</string>
+    <string name="notification">Thông báo</string>
+    <string name="status">Trạng thái</string>
+    <string name="app_name">Traveling_App</string>
+    <string name="profile_page">Trang cá nhân</string>
+    <string name="saved">Đã lưu</string>
+    <string name="place_went">Địa điểm đã đi</string>
+    <string name="share_app">Chia sẻ ứng dụng</string>
+    <string name="rate_app">Đánh giá ứng dụng</string>
+    <string name="support_center">Hỗ trợ ứng dụng</string>
+    <string name="settings">Cài đặt</string>
+    <string name="log_out">Đăng xuất</string>
+    <string name="enter_keyword">Nhập từ khóa</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="filter">Bộ lọc</string>
+    <string name="search_and_filter">Tìm kiếm và lọc</string>
+    <string name="selected_filter">Bộ lọc đã được chọn</string>
+    <string name="tap_to_delete_out_of_filter">Chạm để xóa khỏi bộ lọc</string>
+    <string name="please_enter_keyword">Vui lòng nhập từ khóa</string>
+    <string name="recent_search">Tìm kiếm gần đây</string>
+    <string name="feature_places">Địa điểm nổi bật</string>
+    <string name="delete_all">Xoá tất cả</string>
+    <string name="avatar_picture">Ảnh đại diện</string>
+    <string name="item_count">%1$d mục</string>
+    <string name="tour_price">Giá tour</string>
+    <string name="tour_purpose">Mục đích chuyến đi</string>
+    <string name="geographical_features">Đặc điểm địa lý</string>
+    <string name="province">Tỉnh thành</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="book_count">%1$d lượt đặt</string>
+    <string name="rate_count">%1$d đánh giá</string>
+    <string name="search_result">Kết quả tìm kiếm</string>
+    <string name="result_found_count">%1$d tìm thấy</string>
+    <string name="menu">Menu</string>
+    <string name="post">Bài viết</string>
+    <string name="user_infomation">Thông tin người dùng</string>
+    <string name="add_new_post">Thêm bài viết mới</string>
+    <string name="edit_profile">Chỉnh sửa trang cá nhân</string>
+    <string name="not_implemented">Chưa được triển khai</string>
+    <string name="about_us">Về chúng tôi</string>
+    <string name="about_us_information">
+        Thực hiện bởi
+        \n
+        Phạm Văn Quang Huy - 22520571
+        \n
+        Nguyễn Thiên Nhật - 22521022
+    </string>
+    <string name="get_current_location">Lấy vị trí hiện tại</string>
+    <string name="getting_current_location_status">Đang truy cập vào vị trí hiện tại</string>
+    <string name="get_location_failed">Lấy vị trí hiện tại thất bại</string>
+    <string name="accumulate_points_infomation">Thông tin tích lũy điểm</string>
+    <string name="write_comment_here">Viết bình luận tại đây</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="online">Đang hoạt động</string>
+    <string name="age_count">%1$d tuổi</string>
+    <string name="uploading_image">Đang tải lên hình ảnh</string>
+    <string name="update_user_information">Cập nhật thông tin người dùng</string>
+    <string name="enter_your_full_name">Nhập tên của bạn</string>
+    <string name="enter_your_birthday">Nhập ngày sinh</string>
+    <string name="enter_your_description">Nhập mô tả</string>
+    <string name="choose_your_gender">Chọn giới tính của bạn</string>
+    <string name="update">Cập nhật</string>
+    <string name="update_user_information_successfully">Cập nhật thông tin người dùng thành công</string>
+    <string name="address_placeholder">Địa chỉ: %1$s</string>
+    <string name="book_count_placeholder">%1$d lượt đặt</string>
+    <string name="rate_count_placeholder">%1$d đánh giá</string>
+    <string name="total_placeholder">Tổng số: %1$d</string>
+    <string name="facebook_app_id">3312377312341073</string>
+    <string name="fb_login_protocol_scheme">fb3312377312341073</string>
+    <string name="facebook_client_token">b6c86bb3382f89f98066d409ced7f443</string>
+    <string name="notification_content_placeholder">%1$s đã bình luận vào bài viết của bạn</string>
+    <string name="enter_your_post_content">Nhập nội dung bài viết của bạn</string>
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                tools:src="@drawable/main_avatar"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:id="@+id/img_review"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:src="@drawable/main_avatar"/>
+
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/name_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        tools:text="Nam"></TextView>
+
+                    <ImageView
+                        android:id="@+id/star1_review"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:tag="1"
+                        android:visibility="invisible"
+                        android:src="@drawable/main_star_solid"></ImageView>
+                    <ImageView
+                        android:id="@+id/star2_review"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:tag="2"
+                        android:visibility="invisible"
+                        android:src="@drawable/main_star_solid"></ImageView>
+                    <ImageView
+                        android:id="@+id/star3_review"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:tag="3"
+                        android:visibility="invisible"
+                        android:src="@drawable/main_star_solid"></ImageView>
+                    <ImageView
+                        android:id="@+id/star4_review"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:tag="4"
+                        android:visibility="invisible"
+                        android:src="@drawable/main_star_solid"></ImageView>
+                    <ImageView
+                        android:id="@+id/star5_review"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:tag="5"
+                        android:visibility="invisible"
+                        android:src="@drawable/main_star_solid"></ImageView>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/time_review"
+                    android:textSize="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="01/01/2003"
+                    android:textColor="#7F7F7F"></TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/content_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#7F7F7F"
+            tools:text="Mọi thứ đều rất tuyệt vời, tui rất là thích."
+            android:textSize="12sp"></TextView>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_review1"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="6dp"
+                    android:layout_width="80dp"
+                    android:visibility="gone"
+                    android:layout_height="50dp"
+                    ></ImageView>
+                <ImageView
+                    android:id="@+id/img_review2"
+                    android:scaleType="centerCrop"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="6dp"
+                    android:visibility="gone"
+                    ></ImageView>
+                <ImageView
+                    android:id="@+id/img_review3"
+                    android:layout_marginRight="6dp"
+                    android:scaleType="centerCrop"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                   ></ImageView>
+                <ImageView
+                    android:id="@+id/img_review4"
+                    android:scaleType="centerCrop"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    ></ImageView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingStart="45dp"
+    android:paddingEnd="25dp">
+    <item android:drawable="@drawable/rectangle_rounded"
+        android:height="50dp"/>
+    <item
+        android:gravity="start|center_vertical"
+        android:width="25dp"
+        android:height="25dp"
+        android:start="12dp"
+        android:drawable="@drawable/outline_search_24"/>
+</layer-list>

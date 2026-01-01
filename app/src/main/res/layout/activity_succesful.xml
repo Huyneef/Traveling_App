@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ResetPassSuccessActivity">
+
+    <ImageView
+        android:id="@+id/succes_img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/logo7"
+        android:layout_marginTop="60dp"/>
+    <TextView
+        android:id="@+id/succes_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/succes_img"
+        android:text="Chúc mừng!"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="#0099ff"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/succes_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn đã đổi mật khẩu thành công."
+        android:textSize="14dp"
+        android:textColor="#817A7A"
+        android:layout_below="@+id/succes_tv1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        />
+    <Button
+        android:id="@+id/at2_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/succes_tv2"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/stroke_button1"
+        android:text="Đăng nhập"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

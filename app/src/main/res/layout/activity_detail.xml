@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-210dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="120dp">
+
+            <ImageView
+                android:id="@+id/tour_detail_ava"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/main_anh2"></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/banner_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/banner"
+        android:layout_marginTop="-35dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/tour_detail_ava1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/main_anh2"></ImageView>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/tour_detail_ava2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/main_anh2"></ImageView>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/tour_detail_ava3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/main_anh2"></ImageView>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/tour_detail_ava4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/main_anh2"></ImageView>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_below="@id/banner_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="55dp"
+        android:paddingRight="55dp">
+
+        <TextView
+            android:id="@+id/tour_detail_tit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tour VinOasis Phú Quốc và vé công viên nước WaterCin + VinPearl Safari"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/main_location_detail"></ImageView>
+
+            <TextView
+                android:id="@+id/tour_detail_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phú Quốc, Việt Nam"
+                android:textColor="#999999"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <Button
+                    android:id="@+id/tour_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/detail_price"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="3dp"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:text="4.500.000 đ"
+                    app:backgroundTint="#66C7FC"></Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tour_detail_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#999999"></TextView>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/main_star_solid"></ImageView>
+
+            <TextView
+                android:id="@+id/tour_detail_com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#999999"></TextView>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/main_comment_regular"></ImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            app:tabPaddingStart="0dp"
+            app:tabPaddingEnd="0dp"
+            app:tabTextAppearance="@style/MineCustomTabText"
+            app:tabSelectedTextColor="@color/primaryColor"
+            app:tabIndicatorColor="@color/primaryColor"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"/>
+
+</RelativeLayout>

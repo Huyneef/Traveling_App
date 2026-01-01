@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        tools:replace="android:theme"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Traveling_App"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".activity.AboutActivity"
+            android:exported="false"
+            android:label="@string/about_us"
+            android:theme="@style/Base.Theme.Traveling_App.NoActionBar.popMe"/>
+        <activity
+            android:name=".activity.StartActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Base.Theme.Traveling_App.NoActionBar"></activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="false"
+            android:label="@string/sign_up"
+            android:theme="@style/Base.Theme.Traveling_App.NoActionBar" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false"
+            android:label="@string/sign_in"
+            android:theme="@style/Base.Theme.Traveling_App.NoActionBar" />
+        <activity
+            android:name=".activity.ForgotPassActivity"
+            android:exported="false"
+            android:label="@string/forgotten_password"
+            android:theme="@style/Base.Theme.Traveling_App.NoActionBar" />
+        <activity
+            android:name=".activity.ResetPassActivity"
+            android:exported="false"
+            android:label="@string/reset_password"
+            android:theme="@style/Base.Theme.Traveling_App.NoActionBar" />
+        <activity
+            android:name=".activity.ResetPassSuccessActivity"
+            android:exported="false"
+            android:label="@string/successful"
+            android:theme="@style/Base.Theme.Traveling_App.NoActionBar" />
+        <activity
+            android:name=".activity.AdminActivity"
+            android:exported="false"
+            android:label="@string/administrator" />
+        <activity
+            android:name=".activity.AdminCreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AcpemailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.CommentActivity"
+            android:exported="false"
+            android:label="@string/comment"
+            android:theme="@style/Base.Theme.Traveling_App.NoActionBar"/>
+
+        <activity
+            android:name=".activity.CreateBlogActivity"
+            android:exported="false"
+            android:label="@string/create_blog" />
+        <activity
+            android:name=".activity.DetailActivity"
+            android:exported="false"
+            android:label="@string/detail" />
+        <activity
+            android:name=".activity.BookTourActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TourHistoryActivity"
+            android:exported="false"
+            android:label="@string/tour_history" />
+        <activity
+            android:name=".activity.VoucherActivity"
+            android:exported="false"
+            android:label="@string/coupon" />
+        <activity
+            android:name=".activity.PayFailActivity"
+            android:exported="false"
+            android:label="@string/failed" />
+        <activity
+            android:name=".activity.PaySuccessActivity"
+            android:exported="false"
+            android:label="@string/successful" />
+
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false"
+            android:label="@string/profile_page" />
+        <activity
+            android:name=".activity.SearchAndFilterActivity"
+            android:exported="false"
+            android:label="@string/search_and_filter" />
+        <activity
+            android:name=".activity.PostInfoActivity"
+            android:exported="false"
+            android:label="@string/status"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.PointActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ShareAppActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.UpdateUserInformationActivity"
+            android:exported="false"
+            android:label="@string/update_user_information"/>
+
+
+        <activity android:name=".activity.Login_google">
+            <!-- Các thuộc tính khác của hoạt động -->
+        </activity>
+
+        <activity android:name=".activity.Login_facebook"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="3312377312341073" android:host="3312377312341073" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+    </application>
+
+</manifest>

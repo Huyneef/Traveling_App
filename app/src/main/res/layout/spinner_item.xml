@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/lacovn"
+        android:id="@+id/demo_item_img"/>
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/demo_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="VIE"
+        android:textSize="16dp"
+        android:gravity="center"
+        />
+
+</LinearLayout>

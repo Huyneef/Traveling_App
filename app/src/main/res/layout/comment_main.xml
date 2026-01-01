@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rectangle_rounded"
+    android:backgroundTint="@color/white"
+    tools:context=".activity.CommentActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="15dp"
+        android:clipToPadding="false"
+        android:id="@+id/commentRecycleView"
+        tools:listitem="@layout/comment_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/commentEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_rounded"
+            android:hint="@string/write_comment_here"
+            android:inputType="textShortMessage"
+            android:maxLines="1"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:enabled="false"
+            android:text="Đăng" />
+    </LinearLayout>
+
+</LinearLayout>

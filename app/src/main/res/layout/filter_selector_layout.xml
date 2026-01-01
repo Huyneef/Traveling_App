@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout style="@style/HeadingTitleContainer">
+        <TextView
+            android:id="@+id/title"
+            style="@style/HeadingTitle"
+            android:layout_alignParentStart="true"
+            tools:text="@string/province"/>
+    </RelativeLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/filterItemContainer"
+        style="@style/FlexBoxContainer"
+        android:layout_marginLeft="@dimen/margin_left_right_root_element"
+        android:layout_marginRight="@dimen/margin_left_right_root_element">
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_margin="6dp"
+        android:layout_width="120dp"
+        android:layout_height="145dp"
+        android:background="@drawable/hint_border"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:id="@+id/image_hint"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:src="@drawable/main_anh4"></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/title_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="a"
+                android:textStyle="bold"></TextView>
+            <ImageView
+                android:id="@+id/hint_tour_love"
+                android:tag="hint_tour_love"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="-16dp"
+                android:layout_height="15dp"
+                android:src="@drawable/main_heart_regular"></ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Việt Nam"
+            android:textColor="#B0B0B0"
+            android:textSize="11sp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/rate_hint"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="3.5"
+                android:textColor="#B0B0B0"
+                android:textSize="11sp"></TextView>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/main_star_solid"></ImageView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price_hint"
+            android:gravity="center"
+            android:backgroundTint="@color/primaryColor"
+            android:background="@drawable/button_border_main"
+            android:layout_marginTop="-20dp"
+            android:layout_gravity="right"
+            android:padding="0dp"
+            android:textColor="@color/white"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:text="1.000.000đ"
+            android:textSize="10sp"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

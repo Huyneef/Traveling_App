@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="220dp"
+    android:layout_marginLeft="7.5dp"
+    android:layout_marginRight="7.5dp"
+    android:layout_marginBottom="15dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="15dp">
+
+    <ImageView
+        android:id="@+id/img_blog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@color/black"
+        android:importantForAccessibility="no" />
+
+    <TextView
+            android:id="@+id/name_user_blog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|bottom"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_marginBottom="7.5dp"
+            android:maxLines="1"
+            android:textColor="#fff"
+            tools:text="Hng_asdays" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="7.5dp"
+        android:layout_marginEnd="7.5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center"
+            android:src="@drawable/heart1"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:id="@+id/num_love_blog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="70"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

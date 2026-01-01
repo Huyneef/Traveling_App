@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.UserInformationFragment">
+
+    <TextView
+        style="@style/HeadingTitle"
+        android:text="@string/user_infomation"
+        android:layout_marginBottom="15dp"/>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:id="@+id/usernameTextView"
+            style="@style/SmallClickableTextView"
+            tools:text="user0"
+            android:drawableStart="@drawable/baseline_person_outline_24"/>
+
+        <TextView
+            android:id="@+id/genderTextView"
+            style="@style/SmallClickableTextView"
+            android:drawableStart="@drawable/baseline_female_24"
+            tools:text="Nữ"/>
+
+        <TextView
+            android:id="@+id/ageTextView"
+            style="@style/SmallClickableTextView"
+            android:drawableStart="@drawable/baseline_cake_24"
+            tools:text="30 tuổi"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</LinearLayout>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AdminCreateActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Tour du lịch"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:background="@color/primaryColor"
+        android:textStyle="bold"
+        android:textColor="@color/white"></TextView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên tour(*)"
+                android:textColor="#525252"
+                android:textSize="18sp"></TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                android:layout_marginTop="2dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                style="@style/LoginTextInputLayoutStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtTen"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Tên"
+                    android:padding="0dp"
+                    android:textColorHint="#AFAFAF"
+                    android:textCursorDrawable="@drawable/color_cursor"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Địa chỉ tour(*)"
+                android:textColor="#525252"
+                android:textSize="18sp"></TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                android:layout_marginTop="2dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                style="@style/LoginTextInputLayoutStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtDc"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Địa chỉ"
+                    android:padding="0dp"
+                    android:textColorHint="#AFAFAF"
+                    android:textCursorDrawable="@drawable/color_cursor"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại liên hệ(*)"
+                android:textColor="#525252"
+                android:textSize="18sp"></TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                android:layout_marginTop="2dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                style="@style/LoginTextInputLayoutStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtSdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="SĐT"
+                    android:inputType="number"
+                    android:padding="0dp"
+                    android:textColorHint="#AFAFAF"
+                    android:textCursorDrawable="@drawable/color_cursor"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loại hình(*)"
+                android:textColor="#525252"
+                android:textSize="18sp"></TextView>
+
+            <Spinner
+                android:id="@+id/spinner_loai"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/border_tour_admin"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mô tả tour(*)"
+                android:textColor="#525252"
+                android:textSize="18sp"></TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                android:layout_marginTop="2dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                style="@style/LoginTextInputLayoutStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtMt"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="top"
+                    android:hint="Mô tả"
+                    android:inputType="textMultiLine"
+                    android:textColorHint="#AFAFAF"
+                    android:textCursorDrawable="@drawable/color_cursor"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày diễn ra(*)"
+                        android:textColor="#525252"
+                        android:textSize="18sp"></TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:hintEnabled="false"
+                            android:layout_marginTop="2dp"
+                            app:boxCornerRadiusBottomEnd="8dp"
+                            app:boxCornerRadiusBottomStart="8dp"
+                            app:boxCornerRadiusTopEnd="8dp"
+                            app:boxCornerRadiusTopStart="8dp"
+                            android:theme="@style/LoginTextInputLayoutStyle"
+                            style="@style/LoginTextInputLayoutStyle">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edtNbd"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Ngày"
+                                android:padding="0dp"
+                                android:textColorHint="#AFAFAF"
+                                android:textCursorDrawable="@drawable/color_cursor"></com.google.android.material.textfield.TextInputEditText>
+                            <ImageView
+                                android:id="@+id/calendar_bd"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="end"
+                                android:layout_marginTop="-35dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/calendar"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ngày kết thúc(*)"
+                        android:textColor="#525252"
+                        android:textSize="18sp"></TextView>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="false"
+                        android:layout_marginTop="2dp"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusTopStart="8dp"
+                        android:theme="@style/LoginTextInputLayoutStyle"
+                        style="@style/LoginTextInputLayoutStyle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtNkt"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="Ngày"
+                            android:padding="0dp"
+                            android:textColorHint="#AFAFAF"
+                            android:textCursorDrawable="@drawable/color_cursor"></com.google.android.material.textfield.TextInputEditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <ImageView
+                        android:id="@+id/calendar_kt"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-35dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/calendar"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giá tour(*)"
+                android:textColor="#525252"
+                android:textSize="18sp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    android:layout_marginTop="2dp"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    android:theme="@style/LoginTextInputLayoutStyle"
+                    style="@style/LoginTextInputLayoutStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtGia"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Giá"
+                        android:inputType="number"
+                        android:padding="0dp"
+                        android:textColorHint="#AFAFAF"
+                        android:textCursorDrawable="@drawable/color_cursor"></com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="VNĐ"
+                    android:textColor="@color/primaryColor"
+                    android:layout_marginLeft="-50dp"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Khuyến mại"
+                android:textColor="#525252"
+                android:textSize="18sp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    android:layout_marginTop="2dp"
+                    app:boxCornerRadiusBottomEnd="8dp"
+                    app:boxCornerRadiusBottomStart="8dp"
+                    app:boxCornerRadiusTopEnd="8dp"
+                    app:boxCornerRadiusTopStart="8dp"
+                    android:theme="@style/LoginTextInputLayoutStyle"
+                    style="@style/LoginTextInputLayoutStyle">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtKm"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Khuyến mại"
+                        android:padding="0dp"
+                        android:textColorHint="#AFAFAF"
+                        android:textCursorDrawable="@drawable/color_cursor"></com.google.android.material.textfield.TextInputEditText>
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="%"
+                    android:textColor="@color/primaryColor"
+                    android:layout_marginLeft="-40dp"
+                    android:textSize="18sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Link ảnh tour(*)"
+                android:textColor="#525252"
+                android:textSize="18sp"></TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                android:layout_marginTop="2dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                android:theme="@style/LoginTextInputLayoutStyle"
+                style="@style/LoginTextInputLayoutStyle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtAnhChinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Link"
+                    android:padding="0dp"
+                    android:textColorHint="#AFAFAF"
+                    android:textCursorDrawable="@drawable/color_cursor"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:background="#BCBCBC"
+                app:backgroundTint="#BCBCBC"
+                android:textColor="#555555"
+                android:padding="0dp"
+                android:text="Upload"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/btnLuu"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/primaryColor"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Lưu"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

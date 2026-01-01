@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/swipeRevealLayout">
+
+    <!-- Layout của nút xóa -->
+    <LinearLayout
+        android:id="@+id/layout_delete"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#E33F3F"
+        android:visibility="gone"> <!-- Ẩn khi bắt đầu -->
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_trash_regular"/>
+    </LinearLayout>
+
+    <!-- Layout chính -->
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:background="@color/unread_notification"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <ImageView
+            android:id="@+id/image_noti"
+            android:layout_marginRight="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            tools:src="@drawable/main_avatar"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/content_noti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:text="Huỳnh Văn An đã bình luận về bài viết của bạn"/>
+
+            <TextView
+                android:id="@+id/time_noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="1 giờ trước"
+                android:textColor="#797979"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

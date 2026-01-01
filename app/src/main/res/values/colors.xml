@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="grey">#AAA</color>
+    <color name="grey_light">#DDD</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#F00</color>
+    <color name="background">@color/white</color>
+    <color name="text_foreground">@color/black</color>
+    <color name="text_placeholder">@color/grey</color>
+    <color name="placeholder">@color/text_placeholder</color>
+    <color name="primary_color">#1e90ff</color>
+    <color name="primary_color_dark">#116289</color>
+    <color name="navigation_bar_color">@color/black</color>
+    <color name="primaryColor">#0C9FEE</color>
+    <!--    màu border mặc định của InputTextLayout-->
+    <color name="mtrl_textinput_default_box_stroke_color">#C2C2C2</color>
+    <color name="star">#FFF999</color>
+    <color name="unread_notification">#3D41B7F7</color>
+</resources>

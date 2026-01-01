@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Traveling_App" parent="Theme.Material3.Light">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:colorPrimary">@color/primary_color</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:navigationBarColor" tools:targetApi="O_MR1">@color/navigation_bar_color</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="O_MR1">true</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorSurface">@color/background</item>
+        <item name="homeAsUpIndicator">@drawable/baseline_arrow_back_24</item>
+        <!-- Change navigate up button icon in action bar
+        <item name="homeAsUpIndicator">@drawable/baseline_settings_24</item>
+        -->
+        <item name="actionBarStyle">@style/ActionBar</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@color/white</item>
+        <item name="titleTextStyle">@style/ActionBarTitle</item>
+    </style>
+
+    <style name="ActionBarTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/primaryColor</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/primaryColor</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <!-- Base theme without actionbar -->
+    <style name="Base.Theme.Traveling_App.NoActionBar" parent="Base.Theme.Traveling_App">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Style for ActionBar -->
+    <style name="Base.Theme.Traveling_App.ActionBar" parent="@style/Widget.Material3.Light.ActionBar.Solid">
+        <item name="background">@color/background</item>
+    </style>
+
+    <style name="Theme.Traveling_App" parent="Base.Theme.Traveling_App" />
+
+    <style name="Base.Theme.Traveling_App.NoActionBar.popMe">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+</resources>
