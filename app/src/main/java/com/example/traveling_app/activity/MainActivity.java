@@ -47,7 +47,9 @@ public class MainActivity extends AppCompatActivity {
                     case 2:
                         bottomNavigationView.getMenu().findItem(R.id.menu_love).setChecked(true);
                         break;
-
+                    case 3:
+                        bottomNavigationView.getMenu().findItem(R.id.menu_chat).setChecked(true);
+                        break;
                     case 4:
                         bottomNavigationView.getMenu().findItem(R.id.menu_menu).setChecked(true);
                         break;
@@ -67,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
                     viewPager.setCurrentItem(1);
                 else if (item.getItemId()==R.id.menu_love)
                     viewPager.setCurrentItem(2);
+                else if (item.getItemId()==R.id.menu_chat)
+                    viewPager.setCurrentItem(3);
                 else if (item.getItemId()==R.id.menu_menu)
                     viewPager.setCurrentItem(4);
 

@@ -86,4 +86,6 @@
     <string name="facebook_client_token">b6c86bb3382f89f98066d409ced7f443</string>
     <string name="notification_content_placeholder">%1$s đã bình luận vào bài viết của bạn</string>
     <string name="enter_your_post_content">Nhập nội dung bài viết của bạn</string>
+    <string name="chat_ai">Trợ lý AI</string>
+    <string name="ai_assistant">Trợ lý AI Du lịch</string>
 </resources>

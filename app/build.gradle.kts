@@ -75,4 +75,12 @@ dependencies {
     implementation("com.google.android.gms:play-services-auth:20.7.0")
 
     implementation("com.google.code.gson:gson:2.10.1")
+    
+    // Gemini AI SDK
+    implementation("com.google.ai.client.generativeai:generativeai:0.1.2")
+    
+    // Retrofit for API calls
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 }

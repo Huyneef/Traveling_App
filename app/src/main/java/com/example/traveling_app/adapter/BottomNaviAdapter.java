@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.example.traveling_app.fragment.Menu_Blog;
+import com.example.traveling_app.fragment.Menu_Chat;
 import com.example.traveling_app.fragment.Menu_Home;
 import com.example.traveling_app.fragment.Menu_Love;
 import com.example.traveling_app.fragment.Menu_Menu;
@@ -27,7 +28,7 @@ public class BottomNaviAdapter extends FragmentStatePagerAdapter {
             case 2:
                 return new Menu_Love();
             case 3:
-                return new Menu_Notification();
+                return new Menu_Chat(); // Changed from Menu_Notification to Menu_Chat
             case 4:
                 return new Menu_Menu();
         }

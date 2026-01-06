@@ -9,7 +9,9 @@
     <item android:id="@+id/menu_love"
         android:title="Love"
         android:icon="@drawable/main_heart_regular_footer"/>
-
+    <item android:id="@+id/menu_chat"
+        android:title="Chat AI"
+        android:icon="@drawable/baseline_chat_24"/>
     <item android:id="@+id/menu_menu"
         android:title="Menu"
         android:icon="@drawable/main_menu_regular"/>
