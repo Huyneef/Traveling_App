@@ -2,7 +2,7 @@
 
 ## Giới thiệu
 Ứng dụng Review Địa Điểm và Booking Tour Du Lịch là một ứng dụng Android hỗ trợ người dùng khám phá các điểm tham quan, đặt tour du lịch và chia sẻ trải nghiệm sau chuyến đi.  
-Ứng dụng cung cấp thông tin tour chi tiết kèm theo đánh giá từ cộng đồng, giúp người dùng dễ dàng lựa chọn hành trình phù hợp với nhu cầu cá nhân.
+Ứng dụng cung cấp thông tin tour chi tiết kèm theo đánh giá từ cộng đồng, giúp người dùng dễ dàng lựa chọn hành trình phù hợp với nhu cầu cá nhân. Ngoài ra, cũng có hỗ trợ từ AI đưa ra gợi ý, tư vấn về tour để tham khảo.
 
 ---
 
@@ -31,7 +31,7 @@
 - Đăng bài review địa điểm
 - Chỉnh sửa thông tin cá nhân
 - Xem lịch sử đặt tour
-
+- Sử dụng AI chatbot để tham khảo cũng như được gợi ý về các tour du lịch
 ---
 
 ### Đối với Admin
